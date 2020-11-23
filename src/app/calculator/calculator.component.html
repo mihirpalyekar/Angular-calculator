@@ -1,0 +1,89 @@
+<div class=" full-width full-height ">
+ <div class="fixed-width full-height margin-auto d-flex flex-column">
+  <div class="header">
+   <div class="title pt-4 pb-2 px-4 fs-18 d-flex justify-content-between">
+    <span>Calculator</span>
+   </div>
+   <div class="display  px-3 text-right">
+    <div [ngClass]="!computeAns?'fs-48':'fs-28'">
+     {{display}}
+    </div>
+    <div class="text-orange" [ngClass]="computeAns?'fs-48':'fs-28'">
+     {{result}}
+    </div>
+   </div>
+  </div>
+  <div class="operators">
+   <div class="operators-row row no-gutters">
+    <div class="operators-cell col-3" (click)="Operate('/')">
+     /
+    </div>
+    <div class="operators-cell col-3" (click)="Operate('*')">
+     *
+    </div>
+    <div class="operators-cell col-3" (click)="Operate('-')">
+     -
+    </div>
+    <div class="operators-cell col-3" (click)="Operate('+')">
+     +
+    </div>
+   </div>
+   <div class="operators-row row no-gutters">
+    <div class="operators-cell col-3" (click)="AddDigit('7')">
+     7
+    </div>
+    <div class="operators-cell col-3" (click)="AddDigit('8')">
+     8
+    </div>
+    <div class="operators-cell col-3" (click)="AddDigit('9')">
+     9
+    </div>
+    <div class="operators-cell col-3">
+
+    </div>
+   </div>
+   <div class="operators-row row no-gutters">
+    <div class="operators-cell col-3" (click)="AddDigit('4')">
+     4
+    </div>
+    <div class="operators-cell col-3" (click)="AddDigit('5')">
+     5
+    </div>
+    <div class="operators-cell col-3" (click)="AddDigit('6')">
+     6
+    </div>
+    <div class="operators-cell col-3" (click)="Clear()">
+     Del
+    </div>
+   </div>
+   <div class="operators-row row no-gutters">
+    <div class="operators-cell col-3" (click)="AddDigit('1')">
+     1
+    </div>
+    <div class="operators-cell col-3" (click)="AddDigit('2')">
+     2
+    </div>
+    <div class="operators-cell col-3" (click)="AddDigit('3')">
+     3
+    </div>
+    <div class="operators-cell col-3" (click)="AllClear()">
+     AC
+    </div>
+   </div>
+   <div class="operators-row row no-gutters">
+    <div class="operators-cell col-3" (click)="PlusMinus()">
+     +/-
+    </div>
+    <div class="operators-cell col-3" (click)="AddDigit('0')">
+     0
+    </div>
+    <div class="operators-cell col-3" (click)="Dot()">
+     .
+    </div>
+    <div class="operators-cell bg-orange col-3" (click)="Calculate()">
+     =
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

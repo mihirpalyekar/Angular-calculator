@@ -1,0 +1,30 @@
+.header {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #333333;
+  .title {
+    color: #ffffff;
+  }
+  .display {
+    color: #ffffff;
+  }
+}
+.operators {
+  background-color: #fafafa;
+
+  .operators-cell {
+    text-align: center;
+    padding: 1em;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333333;
+  }
+}
+.bg-orange {
+  background-color: #ff7500;
+}
+.text-orange {
+  color: #ff7500;
+}
