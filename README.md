@@ -1,6 +1,8 @@
 # AngularCalculator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.0. 
+This project is built to demonstrate the angular skills such as lazy loading and pwa, service workers.
+In this all the menu items are lazy loading making the loadtime less.
 
 ## Development server
 
